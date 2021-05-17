@@ -152,7 +152,6 @@ class Wp_List_Files_In_Folder {
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
-
 		$plugin_admin = new Wp_List_Files_In_Folder_Admin( $this->plugin_name, $this->version );
 
         $this->loader->add_action( 'admin_init', $plugin_admin, 'page_init' );
@@ -173,7 +172,6 @@ class Wp_List_Files_In_Folder {
 	 * @access   private
 	 */
 	private function define_public_hooks() {
-
 		$plugin_public = new Wp_List_Files_In_Folder_Public( $this->plugin_name, $this->version );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
