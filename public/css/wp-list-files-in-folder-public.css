@@ -1,0 +1,79 @@
+/**
+ * File tree view styles
+ */
+ul#wplfif-tree-root {
+	width            : 100%;
+} 
+ul#wplfif-tree-root ul {
+	display : none;
+	margin  : 0 0 0 32px;
+	padding : 0;
+}
+#wplfif-tree-root ul.show {
+	display : block;
+}
+ul#wplfif-tree-root {
+	margin  : 0;
+	padding : 0;
+}
+ul#wplfif-tree-root li {
+	list-style-type : none;
+	margin          : 0;
+}
+ul#wplfif-tree-root li a {
+	text-decoration : none;
+	text-align      : left;
+	display         : block;
+	line-height     : 32px;
+	box-shadow      : none;
+	border          : 0;
+	padding         : 6px 10px;
+}
+ul#wplfif-tree-root li a span {
+	display : inline-block;
+	height  : 32px;
+}
+ul#wplfif-tree-root li a .right {
+	float        : right;
+	margin-right : 8px;
+}
+ul#wplfif-tree-root li a i.dashicons {
+	transition  : none;
+	line-height : 32px;
+	width       : 32px;
+	height      : 32px;
+}
+
+/**
+ * CUSTOMIZABLE COLORS
+ **/
+
+/* File tree box */
+ul#wplfif-tree-root {
+	background-color : white;
+	border           : 1px solid #e0e0e0;
+}
+
+/* Element text color (folders and files) */
+ul#wplfif-tree-root li a {
+	color : #333;
+}
+
+/* Folder element color */
+ul#wplfif-tree-root li a.folder {
+	background-color : #e6e6e6;
+}
+
+/* Folder element color with mouse hover*/
+ul#wplfif-tree-root li a.folder:hover {
+	background-color : #f6f6f6;
+}
+
+/* File element color */
+ul#wplfif-tree-root li a.file {
+}
+
+/* File element color with mouse hover*/
+ul#wplfif-tree-root li a.file:hover {
+	background-color : #f6f6f6;
+}
